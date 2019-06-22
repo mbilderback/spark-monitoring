@@ -25,7 +25,7 @@ steps:
 # Create, edit, or delete a GitHub release.
 - task: GitHubRelease@0
   inputs:
-    gitHubConnection: mbilderback
+    gitHubConnection: mbilderback_publish
     repositoryName: '$(Build.Repository.Name)' 
     action: 'edit' # Options: create, edit, delete
     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
