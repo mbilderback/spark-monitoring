@@ -29,8 +29,8 @@ steps:
     repositoryName: 'databricks-monitoring' 
     action: 'create' # Options: create, edit, delete
     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
-    tagSource: 'auto' # Required when action == Create# Options: auto, manual
-    tag: build-publish# Required when action == Edit || Action == Delete || TagSource == Manual
+    tagSource: 'manual' # Required when action == Create# Options: auto, manual
+    tag: build-publish # Required when action == Edit || Action == Delete || TagSource == Manual
     #title: # Optional
     #releaseNotesSource: 'file' # Optional. Options: file, input
     #releaseNotesFile: # Optional
