@@ -26,8 +26,8 @@ steps:
 - task: GitHubRelease@0
   inputs:
     gitHubConnection: mbilderback_publish
-    repositoryName: '$(Build.Repository.Name)' 
-    action: 'edit' # Options: create, edit, delete
+    repositoryName: 'databricks-monitoring' 
+    action: 'create' # Options: create, edit, delete
     target: '$(Build.SourceVersion)' # Required when action == Create || Action == Edit
     tagSource: 'auto' # Required when action == Create# Options: auto, manual
     tag: build-publish# Required when action == Edit || Action == Delete || TagSource == Manual
